@@ -1,29 +1,96 @@
 import { Head } from "mdx-deck";
 
-export { default as theme } from "./theme";
+export { book as theme } from "mdx-deck/themes";
 
 <Head>
   <title>Using Animations with CSS</title>
 </Head>
 
-# Hello
+# About animations in frontend
 
 ---
 
-## Edit this file
+## Main ways
 
-To create your presentation
+- JavaScript(setTimeout, setIterval, requestAnimationFrame)
+- [CSS3](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS3)
+- HTML5(canvas, svg, webgl)
 
 ```notes
-- Create speaker notes in fenced code blocks
+JavaScript：通过定时器（setTimeout 和 setIterval）来间隔来改变元素样式，或者使用requestAnimationFrame；
+CSS3：transition 和 animation；
+HTML5：使用HTML5提供的绘图方式（canvas、svg、webgl）；
 ```
 
 ---
 
+## svg animation example
+
 <iframe
-  width="500"
+  width="1000"
   height="500"
-  src="//jsfiddle.net/Aflier/pehfos3e/embedded/"
+  src="//jsfiddle.net/pehfos3e/8/embedded/html,result"
+  allowfullscreen="allowfullscreen"
+  allowpaymentrequest
+  frameborder="0"
+/>
+
+---
+
+## Let's begin with a simple example
+
+<iframe
+  width="1000"
+  height="500"
+  src="//jsfiddle.net/sholsyjy/L3dfea08/9/embedded/css,result/"
+  allowfullscreen="allowfullscreen"
+  allowpaymentrequest
+  frameborder="0"
+/>
+
+---
+
+## Point!
+
+- [`@keyframes`](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+  通过关键帧定义来控制动画
+- [`transfrom`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform)
+  属性允许你旋转，缩放，倾斜或平移给定元素。这是通过修改 CSS 视觉格式化模型的坐标空间来实现的。
+- [`animation`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+  是如下属性的一个简写属性形式: animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction 和 animation-fill-mode.
+
+---
+
+## There is a similar example like this =>
+
+<iframe
+  width="1000"
+  height="500"
+  src="//jsfiddle.net/sholsyjy/L3dfea08/18/embedded/css,result/"
+  allowfullscreen="allowfullscreen"
+  allowpaymentrequest
+  frameborder="0"
+/>
+
+---
+
+## Point again!
+
+- [`transition`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+  可以让属性变化成为一个持续一段时间的过程，而不是立即生效的
+
+---
+
+## Let's play (make the example different)
+
+---
+
+## a complicated css animation example
+
+<iframe
+  width="1000"
+  height="500"
+  src="//jsfiddle.net/Aflier/pehfos3e/embedded/html,css,result"
   allowFullScreen="allowfullscreen"
   allowpaymentrequest="true"
   frameBorder="0"
@@ -31,3 +98,4 @@ To create your presentation
 
 ---
 
+# That's all, thanks~
